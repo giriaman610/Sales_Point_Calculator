@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, Arial, sans-serif;
+    background: radial-gradient(circle at top, #eef2ff, #f8fafc 60%);
+    color: #1f2937;
+}
+
+
+
+.app {
+    max-width: 520px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.subtitle {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    margin-bottom: 16px;
+}
+
+.label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+    display: block;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+}
+
+select:focus,
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.metric {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.metric-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.metric-title {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.metric-points {
+    font-weight: 700;
+    font-size: 14px;
+    color: #2563eb;
+}
+
+
+
+.total-card {
+    margin-top: 24px;
+    padding: 18px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* this below section is to make total points card mobile*/
+.total-card {
+    position: sticky;
+    bottom: 16px;
+    z-index: 50;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.metric {
+    border: 1px solid rgba(15, 23, 42, 0.06);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.metric:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+}
+
+select,
+input {
+    background: #f9fafb;
+    border: 1px solid rgba(15, 23, 42, 0.10);
+    transition: border 0.15s ease, box-shadow 0.15s ease;
+}
+
+select:focus,
+input:focus {
+    background: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}

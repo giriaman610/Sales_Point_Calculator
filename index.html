@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sales Points Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+        <header class="header">
+            <h1>Sales Points Calculator</h1>
+            <p class="subtitle">Calculate contest points instantly</p>
+        </header>
+
+        <div class="card">
+            <label class="label">Role</label>
+            <select id="role" onchange="renderMetrics()">
+                <option value="AE">AE</option>
+                <option value="SDR">SDR</option>
+            </select>
+        </div>
+
+        <div id="metrics" class="metrics"></div>
+
+        <div class="total-card">
+            <span>Total Points</span>
+            <strong id="totalPoints">0</strong>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
